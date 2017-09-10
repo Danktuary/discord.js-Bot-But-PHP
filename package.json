@@ -1,0 +1,15 @@
+{
+  "name": "discord.js-bot-but-php",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.php.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
+}

@@ -1,0 +1,5 @@
+// <?php
+
+module.exports = {
+	token: '',
+};
