@@ -14,9 +14,9 @@ I'll fill this out later.
 
 ### Wh... Why would you do such a thing?
 
-I was bored. I needed yet another reason for people to scream at me. This seemed like it'd work well.
+I was bored. I needed yet another reason for people to yell at me. This seemed like it'd work well.
 
-### Using `var`? Prepending all variables with `$`? Attaching all those functions to `global`?!?!
+### Using `var`? Prepending variable names with `$`? Attaching all those functions to `global`?!?!
 
 ITS. JOKE.
 
@@ -28,22 +28,21 @@ But there are reasons for each of those.
 
 ### Some of those functions don't work the exact same as they are in PHP!
 
-Trust me, I (probably) know. Some are either missing additional parameters, simply can't work the same because of some stupid JavaScript limitation, or some other miscellaneous reason. I tried my best, okay?! :(
+Trust me, I (probably) know. Some are either missing additional parameters, simply can't work the same because of some stupid JavaScript limitation, or some other miscellaneous reason. I tried my best, okay?! :'(
 
 ### A few of those doc blocks don't look very accurate, or they're a bit inconsistent. Why?
 
-You can probably blame the PHP docs for some of those. As everyone knows, PHP isn't the most consistent thing in the world. But for inaccurate function/param/return value descriptions, you can possibly
+You can probably blame the PHP docs for some of those. As everyone knows, PHP isn't the most consistent thing in the world. But for inaccurate function/param/return value descriptions, you can probably blame me. I myself probably won't be doing much about it, though.
 
-### Did you put spend time and effort into this, all for a joke?
+### Did you really spend time and effort into this, all for a joke?
 
 Yes, yes I did. This is a good measurement of how far I'll go for a joke.
 
-Did I spend too much time on this? Yes.
-Was it worth risking losing
+Did I spend too much time on this? Yes. Could I have spent this time being productive and doing the things I should've been working on insteand? Most definitely. Do I regret it at all? Nope!
 
 ### How do I contribute to this ridiculous project?
 
-Are you drunk? Not even _I_ want to contribute.
+Are you drunk? Not even ***I*** want to contribute.
 
 ... But if you really want to, feel free to create a pull request - even if it's just for shits 'n giggles. As long as it looks like real PHP, anything goes.
 
