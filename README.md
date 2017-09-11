@@ -12,11 +12,11 @@ I'll fill this out later.
 
 # FAQ (or something like that)
 
-## Wh... Why would you do such a thing?
+### Wh... Why would you do such a thing?
 
 I was bored. I needed yet another reason for people to scream at me. This seemed like it'd work well.
 
-## Using `var`? Prepending all variables with `$`? Attaching all those functions to `global`?!?!
+### Using `var`? Prepending all variables with `$`? Attaching all those functions to `global`?!?!
 
 ITS. JOKE.
 
@@ -26,22 +26,22 @@ But there are reasons for each of those.
 * PHP variables are function-scoped, just like `var`, so it only makes sense to use `var` over `let` or `const`.
 * Attaching functions to `global` is bad, yes, but I couldn't think of any other way to do so. I'd never do such a thing in a real project. You got something better, huh?! (Really, if you do, feel free to create a pull request.)
 
-## Some of those functions don't work the exact same as they are in PHP!
+### Some of those functions don't work the exact same as they are in PHP!
 
 Trust me, I (probably) know. Some are either missing additional parameters, simply can't work the same because of some stupid JavaScript limitation, or some other miscellaneous reason. I tried my best, okay?! :(
 
-## A few of those doc blocks don't look very accurate, or they're a bit inconsistent. Why?
+### A few of those doc blocks don't look very accurate, or they're a bit inconsistent. Why?
 
 You can probably blame the PHP docs for some of those. As everyone knows, PHP isn't the most consistent thing in the world. But for inaccurate function/param/return value descriptions, you can possibly
 
-## Did you put spend time and effort into this, all for a joke?
+### Did you put spend time and effort into this, all for a joke?
 
 Yes, yes I did. This is a good measurement of how far I'll go for a joke.
 
 Did I spend too much time on this? Yes.
 Was it worth risking losing
 
-## How do I contribute to this ridiculous project?
+### How do I contribute to this ridiculous project?
 
 Are you drunk? Not even _I_ want to contribute.
 
