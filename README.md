@@ -22,7 +22,7 @@ ITS. JOKE.
 
 But there are reasons for each of those.
 
-* PHP variables are declared and referenced with `$`
+* PHP variables are declared and referenced with `$`, so that's a no-brainer.
 * PHP variables are function-scoped, just like `var`, so it only makes sense to use `var` over `let` or `const`.
 * Attaching functions to `global` is bad, yes, but I couldn't think of any other way to do so. I'd never do such a thing in a real project. You got something better, huh?! (Really, if you do, feel free to create a pull request.)
 
