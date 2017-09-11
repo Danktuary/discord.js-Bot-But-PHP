@@ -24,21 +24,19 @@ But there are reasons for each of those.
 
 ### Some of those functions don't work the exact same as they do in PHP!
 
-Trust me, I (probably) know. Some are either missing additional parameters, simply can't work the same because of some stupid JavaScript limitation, or some other miscellaneous reason. I tried my best, okay?! :'(
+Trust me, I (probably) know. Some are either missing additional parameters, simply can't work the same because of some stupid JavaScript limitation, or some other miscellaneous reason. I tried my best, okay?! 😭
 
 ### A few of those doc blocks don't look very accurate, or they're a bit inconsistent. Why?
 
 You can probably blame the PHP docs for some of those. As everyone knows, PHP isn't the most consistent thing in the world. But for inaccurate function/param/return value descriptions, you can probably blame me. I myself probably won't be doing much about it, though.
-
-### But... PHP doesn't have async/await, so why use that?
-
-This is true, but it also doesn't have promises either. The use of async/await is there to make everything to mask it and make it look like regular, synchronous PHP code.
 
 ### Did you really spend time and effort into this, all for a joke?
 
 Yes, yes I did. This is a good measurement of how far I'll go for a joke.
 
 Did I spend too much time on this? Yes. Could I have spent this time being productive and doing the things I should've been working on insteand? Most definitely. Do I regret it at all? Nope!
+
+Fun fact: I actually occassionally confused myself when looking at this code, because my brain couldn't tell if it was JS or PHP at a glance. With that being said, I think I've achieved the goal of this project.
 
 ### How do I contribute to this ridiculous project?
 
