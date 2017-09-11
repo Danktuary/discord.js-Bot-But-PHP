@@ -34,7 +34,7 @@ You can probably blame the PHP docs for some of those. As everyone knows, PHP is
 
 Yes, yes I did. This is a good measurement of how far I'll go for a joke.
 
-Did I spend too much time on this? Yes. Could I have spent this time being productive and doing the things I should've been working on insteand? Most definitely. Do I regret it at all? Nope!
+Did I spend too much time on this? Yes. Could I have spent this time being productive and doing the things I should've been working on instead? Most definitely. Do I regret it at all? Nope!
 
 Fun fact: I actually occassionally confused myself when looking at this code, because my brain couldn't tell if it was JS or PHP at a glance. With that being said, I think I've achieved the goal of this project.
 
@@ -57,3 +57,9 @@ The only ones that I didn't create examples for were the functions inside the `.
 * My sanity
 * The friendships I once had before publishing this
 
+# Credit
+
+The message that sparked it all:
+<div align="center">
+	<img src="https://i.imgur.com/G6iXTGG.png" alt="" />
+</div>
