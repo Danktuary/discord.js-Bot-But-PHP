@@ -79,12 +79,12 @@ module.exports = {
 		if (!is_array($array)) type_error('count', 1, 'array', $array);
 		if (!is_bool($recursive)) type_error('count', 2, 'bool', $recursive);
 
-		if ($recursive != true) return $array.length;
+		if ($recursive != true) return $array['length'];
 
 		var $count = 0;
 
 		function count_array($arr) {
-			for (var $i = 0; $i < $arr.length; ++$i) {
+			for (var $i = 0; $i < $arr['length']; ++$i) {
 				if (is_array($arr[$i])) {
 					count_array($arr[$i]);
 					continue;

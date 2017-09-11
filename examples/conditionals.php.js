@@ -49,8 +49,8 @@ print_r('\n`is_callable()` examples\n---------------\n');
 print_r('closure: ' + is_callable($closure));
 print_r('empty class: ' + is_callable(EmptyClass));
 print_r('instantiated class: ' + is_callable($other_class));
-print_r('class property: ' + is_callable($other_class.prop));
-print_r('class method: ' + is_callable($other_class.example));
+print_r('class property: ' + is_callable($other_class['prop']));
+print_r('class method: ' + is_callable($other_class['example']));
 print_r('static class method: ' + is_callable(OtherClass.staticExample));
 
 print_r('\n`is_float()` & `is_double()` examples\n---------------\n');
