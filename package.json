@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.php.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "arrays": "node examples/arrays.php.js",
+    "conditionals": "node examples/conditionals.php.js",
+    "strings": "node examples/strings.php.js",
+    "typecasting": "node examples/typecasting.php.js"
   },
   "keywords": [],
   "author": "",
