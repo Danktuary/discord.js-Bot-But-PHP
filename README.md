@@ -1,4 +1,6 @@
-![itsjoke](http://i.imgur.com/JN0sMnl.png)
+<div align="center">
+	<img src="http://i.imgur.com/JN0sMnl.png" title="it's joke" alt="it's joke" />
+</div>
 
 # Discord.js Bot (but PHP)
 
