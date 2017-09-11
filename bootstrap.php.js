@@ -5,7 +5,7 @@ var $functions = scandir('./functions');
 const CONSTANTS = require('./constants.php');
 
 function register_globally($array) {
-	for (let $key of Object.keys($array)) {
+	for (let $key of Object['keys']($array)) {
 		global[$key] = $array[$key];
 	}
 }

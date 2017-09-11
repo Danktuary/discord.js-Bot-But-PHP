@@ -4,7 +4,7 @@ var { type_error } = require('../errors.php');
 var { strval } = require('./typecasting.php');
 var { is_array, is_integer, is_null, is_string } = require('./conditional_checks.php');
 
-module.exports = {
+module['exports'] = {
 	/**
 	 * 
 	 * @param {string} $delimiter The boundary string.
@@ -21,14 +21,14 @@ module.exports = {
 		if (!is_null($limit) && !is_integer($limit)) type_error('explode', 3, 'integer', $limit);
 
 		if ($limit) {
-			if ($limit == 0) return [$string];
-			if ($limit < 0) return $string.split($delimiter, $limit);
+			if ($limit === 0) return [$string];
+			if ($limit < 0) return $string['split']($delimiter, $limit);
 
-			var $rest = $string.split($delimiter).slice($limit).join($delimiter);
-			return $string.split($delimiter, $limit).concat($rest);
+			var $rest = $string['split']($delimiter)['slice']($limit)['join']($delimiter);
+			return $string['split']($delimiter, $limit)['concat']($rest);
 		}
 
-		return $string.split($delimiter);
+		return $string['split']($delimiter);
 	},
 
 	/**
@@ -39,7 +39,7 @@ module.exports = {
 	 */
 	lcfirst($str) {
 		if (!is_string($str)) type_error('lcfirst', 1, 'string', $str);
-		return $str[0].toLowerCase() + $str.slice(1);
+		return $str[0]['toLowerCase']() + $str['slice'](1);
 	},
 
 	/**
@@ -50,7 +50,7 @@ module.exports = {
 	 */
 	ucfirst($str) {
 		if (!is_string($str)) type_error('ucfirst', 1, 'string', $str);
-		return $str[0].toUpperCase() + $str.slice(1);
+		return $str[0]['toUpperCase']() + $str['slice'](1);
 	},
 
 	/**
@@ -61,7 +61,7 @@ module.exports = {
 	 */
 	strtolower($string) {
 		if (!is_string($string)) type_error('strtolower', 1, 'string', $string);
-		return $string.toLowerCase();
+		return $string['toLowerCase']();
 	},
 
 	/**
@@ -72,7 +72,7 @@ module.exports = {
 	 */
 	strtoupper($string) {
 		if (!is_string($string)) type_error('strtoupper', 1, 'string', $string);
-		return $string.toUpperCase();
+		return $string['toUpperCase']();
 	},
 
 	/**
@@ -83,7 +83,7 @@ module.exports = {
 	 */
 	strlen($string) {
 		if (!is_string($string) && !is_numeric($string)) type_error('strlen', 1, 'string', $string);
-		return strval($string).length;
+		return strval($string)['length'];
 	},
 
 	/**
@@ -97,7 +97,7 @@ module.exports = {
 	str_repeat($input, $multiplier) {
 		if (!is_string($input)) type_error('str_repeat', 1, 'string', $input);
 		if (!is_numeric($multiplier)) type_error('str_repeat', 2, 'integer', $multiplier);
-		return $input.repeat($multiplier);
+		return $input['repeat']($multiplier);
 	},
 
 	/**
@@ -117,7 +117,7 @@ module.exports = {
 		if (!is_string($needle)) type_error('strpos', 2, 'string', $needle);
 		if (!is_numeric($offset)) type_error('strpos', 3, 'integer', $offset);
 
-		return this.strtolower($haystack).indexOf(this.strtolower($needle), $offset);
+		return this['strtolower']($haystack)['indexOf'](this['strtolower']($needle), $offset);
 	},
 
 	/**
@@ -133,6 +133,6 @@ module.exports = {
 		if (!is_numeric($start)) type_error('substr', 2, 'integer', $start);
 		if (!is_null($length) && !is_numeric($length)) type_error('substr', 3, 'integer', $length);
 
-		return $string.substr($start, $length);
+		return $string['substr']($start, $length);
 	},
 };

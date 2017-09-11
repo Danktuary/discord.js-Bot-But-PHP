@@ -1,13 +1,13 @@
 // <?php
 
-module.exports = {
+module['exports'] = {
 	/**
 	 * Finds whether a variable is an array
 	 * 
 	 * @param {*} $variable The variable being evaluated.
 	 * @return {boolean} Returns TRUE if var is an array, FALSE otherwise.
 	 */
-	is_array: Array.isArray,
+	is_array: Array['isArray'],
 
 	/**
 	 * Finds out whether a variable is a boolean
@@ -35,7 +35,7 @@ module.exports = {
 	 * @return {boolean} Returns TRUE if var is a float, FALSE otherwise.
 	 */
 	is_double() {
-		return this.is_float(...arguments);
+		return this['is_float'](...arguments);
 	},
 
 	/**
@@ -45,7 +45,7 @@ module.exports = {
 	 * @return {boolean} Returns TRUE if var is a float, FALSE otherwise.
 	 */ 
 	is_float($var) {
-		return (!isNaN($var) && !Number.isInteger($var));
+		return (!isNaN($var) && !Number['isInteger']($var));
 	},	
 
 	/**
@@ -54,14 +54,14 @@ module.exports = {
 	 * @param {*} $var The variable being evaluated.
 	 * @return {boolean} Returns TRUE if var is an integer, FALSE otherwise.
 	 */
-	is_int: Number.isInteger,
+	is_int: Number['isInteger'],
 
 	/**
 	 * Alias of is_int()
 	 * 
 	 * @return {boolean} Returns TRUE if var is an integer, FALSE otherwise.
 	 */
-	is_integer: Number.isInteger,
+	is_integer: Number['isInteger'],
 
 	/**
 	 * Finds whether a variable is NULL
@@ -70,7 +70,7 @@ module.exports = {
 	 * @return {boolean} Returns TRUE if var is null, FALSE otherwise.
 	 */
 	is_null($var) {
-		return $var == null;
+		return $var === null;
 	},
 
 	/**
@@ -100,6 +100,6 @@ module.exports = {
 	 * @return {boolean} Returns FALSE if var exists and has a non-empty, non-zero value. Otherwise returns TRUE.
 	 */
 	empty($var) {
-		return (!$var || (this.is_array($var) && !$var.length));
+		return (!$var || (this['is_array']($var) && !$var['length']));
 	},
 };

@@ -3,7 +3,7 @@
 var { inspect } = require('util');
 var { is_integer, is_null } = require('./conditional_checks.php');
 
-module.exports = {
+module['exports'] = {
 	/**
 	 * The `require_once` statement is identical to `require`
 	 * except it will check if the file has already been included,
@@ -20,7 +20,7 @@ module.exports = {
 		try {
 			return require($file);
 		} catch ($e) {
-			console.error($e);
+			console['error']($e);
 		}
 	},
 
@@ -30,7 +30,7 @@ module.exports = {
 	 * @param {string} $file The file to include.
 	 */
 	include_once() {
-		return this.include(...arguments);
+		return this['include'](...arguments);
 	},
 
 	/**
@@ -43,10 +43,10 @@ module.exports = {
 	 * Otherwise, this function will return NULL.
 	 */
 	print_r($expression = '', $return = false) {
-		if ($return == true) return $expression;
-		if ($expression === '') return console.log();
-		if (this.gettype($expression) === 'string') return console.log($expression);
-		return console.log(inspect($expression, { showHidden: true, depth: null }));
+		if ($return === true) return $expression;
+		if ($expression === '') return console['log']();
+		if (this['gettype']($expression) === 'string') return console['log']($expression);
+		return console['log'](inspect($expression, { showHidden: true, depth: null }));
 	},
 
 	/**
@@ -58,7 +58,7 @@ module.exports = {
 	 * Otherwise, this function will return NULL.
 	 */
 	var_export() {
-		return this.print_r(...arguments);
+		return this['print_r'](...arguments);
 	},
 
 	/**
@@ -79,15 +79,15 @@ module.exports = {
 	 * @return {void}
 	 */
 	exit($status) {
-		if (is_integer($status)) process.exit($status);
-		if (!is_null($status)) this.print_r($status);
-		process.exit();
+		if (is_integer($status)) process['exit']($status);
+		if (!is_null($status)) this['print_r']($status);
+		process['exit']();
 	},
 
 	/**
 	 * Equivalent to exit
 	 */
 	die() {
-		return this.exit(...arguments);
+		return this['exit'](...arguments);
 	},
 };

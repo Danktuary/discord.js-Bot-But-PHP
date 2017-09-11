@@ -1,6 +1,6 @@
 // <?php
 
-module.exports = {
+module['exports'] = {
 	/**
 	 * Get the boolean value of a variable
 	 * 
