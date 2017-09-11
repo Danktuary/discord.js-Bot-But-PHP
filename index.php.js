@@ -18,6 +18,7 @@ for (let $file of $command_files) {
 }
 
 $client.on('ready', function() {
+	print_r('eNd mEeeEEEE pleAASeee');
 	print_r('Ready!');
 });
 
