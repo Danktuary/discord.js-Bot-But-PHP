@@ -83,7 +83,7 @@ module.exports = {
 	 */
 	strlen($string) {
 		if (!is_string($string) && !is_numeric($string)) type_error('strlen', 1, 'string', $string);
-		return strval($string).length;
+		return strval($string)['length'];
 	},
 
 	/**

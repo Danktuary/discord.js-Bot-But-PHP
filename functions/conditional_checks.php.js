@@ -100,6 +100,6 @@ module.exports = {
 	 * @return {boolean} Returns FALSE if var exists and has a non-empty, non-zero value. Otherwise returns TRUE.
 	 */
 	empty($var) {
-		return (!$var || (this.is_array($var) && !$var.length));
+		return (!$var || (this.is_array($var) && !$var['length']));
 	},
 };
