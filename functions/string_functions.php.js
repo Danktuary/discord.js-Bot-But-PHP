@@ -98,5 +98,41 @@ module.exports = {
 		if (!is_string($input)) type_error('str_repeat', 1, 'string', $input);
 		if (!is_numeric($multiplier)) type_error('str_repeat', 2, 'integer', $multiplier);
 		return $input.repeat($multiplier);
-	}
+	},
+
+	/**
+	 * Find the position of the first occurrence of a case-insensitive substring in a string
+	 * 
+	 * @param {*} $haystack The string to search in.
+	 * @param {*} $needle Note that the needle may be a string of one or more characters.
+	 * @param {*} $offset If specified, search will start this number of characters counted
+	 * from the beginning of the string. If the offset is negative, the search will
+	 * start this number of characters counted from the end of the string.
+	 * @return {*} Returns the position of where the needle exists relative to
+	 * the beginnning of the haystack string (independent of offset).
+	 * Also note that string positions start at 0, and not 1.
+	 */
+	stripos($haystack, $needle, $offset = 0) {
+		if (!is_string($haystack)) type_error('strpos', 1, 'string', $haystack);
+		if (!is_string($needle)) type_error('strpos', 2, 'string', $needle);
+		if (!is_numeric($offset)) type_error('strpos', 3, 'integer', $offset);
+
+		return this.strtolower($haystack).indexOf(this.strtolower($needle), $offset);
+	},
+
+	/**
+	 * Return part of a string
+	 * 
+	 * @param {string} $string The input string. Must be one character or longer.
+	 * @param {number} $start The position of the string to start from.
+	 * @param {number} $length The number of characters to extract.
+	 * @return {string} Returns the extracted part of string; or FALSE on failure, or an empty string.
+	 */
+	substr($string, $start, $length) {
+		if (!is_string($string)) type_error('substr', 1, 'string', $string);
+		if (!is_numeric($start)) type_error('substr', 2, 'integer', $start);
+		if (!is_null($length) && !is_numeric($length)) type_error('substr', 3, 'integer', $length);
+
+		return $string.substr($start, $length);
+	},
 };

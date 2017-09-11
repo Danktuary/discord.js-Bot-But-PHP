@@ -6,10 +6,6 @@
 
 The most repulsive repo you never wanted to see!
 
-# Intro
-
-I'll fill this out later.
-
 # FAQ (or something like that)
 
 ### Wh... Why would you do such a thing?
@@ -26,13 +22,17 @@ But there are reasons for each of those.
 * PHP variables are function-scoped, just like `var`, so it only makes sense to use `var` over `let` or `const`.
 * Attaching functions to `global` is bad, yes, but I couldn't think of any other way to do so. I'd never do such a thing in a real project. You got something better, huh?! (Really, if you do, feel free to create a pull request.)
 
-### Some of those functions don't work the exact same as they are in PHP!
+### Some of those functions don't work the exact same as they do in PHP!
 
 Trust me, I (probably) know. Some are either missing additional parameters, simply can't work the same because of some stupid JavaScript limitation, or some other miscellaneous reason. I tried my best, okay?! :'(
 
 ### A few of those doc blocks don't look very accurate, or they're a bit inconsistent. Why?
 
 You can probably blame the PHP docs for some of those. As everyone knows, PHP isn't the most consistent thing in the world. But for inaccurate function/param/return value descriptions, you can probably blame me. I myself probably won't be doing much about it, though.
+
+### But... PHP doesn't have async/await, so why use that?
+
+This is true, but it also doesn't have promises either. The use of async/await is there to make everything to mask it and make it look like regular, synchronous PHP code.
 
 ### Did you really spend time and effort into this, all for a joke?
 
@@ -57,5 +57,5 @@ The only ones that I didn't create examples for were the functions inside the `.
 * Your eyes
 * My eyes
 * My sanity
-* The friendships I once had before showing them this
+* The friendships I once had before publishing this
 

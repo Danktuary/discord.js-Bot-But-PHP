@@ -52,3 +52,18 @@ print_r('\n`str_repeat()` examples\n---------------\n');
 print_r('\'something\' x 0: ' + str_repeat('something', 0));
 print_r('\'something\' x 1: ' + str_repeat('something', 1));
 print_r('\'something\' x 5: ' + str_repeat('something', 5));
+
+print_r('\n`stripos()` examples\n---------------\n');
+
+print_r('\'Some string\', \'some\': ' + stripos('Some string', 'some'));
+print_r('\'Some string\', \'string\': ' + stripos('Some string', 'string'));
+print_r('\'Some string\', \'z\`: ' + stripos('Some string', 'z'));
+print_r('\'Some string\', \'s\', 3: ' + stripos('Some string', 's', 3));
+print_r('\'Some string\', \'s\', 10`: ' + stripos('Some string', 's', 3));
+
+print_r('\n`substr()` examples\n---------------\n');
+
+print_r('\'Some string\', 3: ' + substr('Some string', 3));
+print_r('\'Some string\', -3: ' + substr('Some string', -3));
+print_r('\'Some string\', 3, 3: ' + substr('Some string', 3, 3));
+print_r('\'Some string\', -3, 3: ' + substr('Some string', -3, 3));

@@ -13,7 +13,7 @@ module.exports = {
 	 * Get the string  value of a variable
 	 * 
 	 * @param {*} $var The variable that is being converted to a string.
-	 * @return {string } The string  value of $var.
+	 * @return {string} The string value of $var.
 	 */
 	strval: String,
 

@@ -6,6 +6,16 @@ var { boolval } = require('./typecasting.php');
 
 module.exports = {
 	/**
+	 * Create an array
+	 * 
+	 * @param {*} $var The variable to turn into an array. 
+	 * @return {array} Returns an array of the parameters.
+	 */
+	array($var) {
+		return Array.from($var);
+	},
+
+	/**
 	 * Applies the callback to the elements of the given arrays
 	 * 
 	 * @param {function} $callback Callback function to run for each element in each array.

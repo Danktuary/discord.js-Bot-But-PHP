@@ -1,7 +1,5 @@
 // <?php
 
-var { gettype } = require('./general_functions.php');
-
 module.exports = {
 	/**
 	 * Finds whether a variable is an array
@@ -18,7 +16,7 @@ module.exports = {
 	 * @return {boolean} Returns TRUE if var is a boolean, FALSE otherwise.
 	 */
 	is_bool($var) {
-		return gettype($var) === 'boolean' || $var instanceof Boolean;
+		return typeof $var === 'boolean' || $var instanceof Boolean;
 	},
 
 	/**
@@ -28,7 +26,7 @@ module.exports = {
 	 * @return {boolean} Returns TRUE if var is callable, FALSE otherwise.
 	 */
 	is_callable($var) {
-		return gettype($var) === 'function';
+		return typeof $var === 'function';
 	},
 	
 	/**
@@ -92,7 +90,7 @@ module.exports = {
 	 * @return {boolean} Returns TRUE if var is of type string, FALSE otherwise.
 	 */
 	is_string($var) {
-		return gettype($var) === 'string';
+		return typeof $var === 'string';
 	},
 
 	/**
