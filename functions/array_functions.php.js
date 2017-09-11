@@ -4,7 +4,7 @@ var { type_error } = require('../errors.php');
 var { is_array, is_bool, is_callable, is_numeric } = require('./conditional_checks.php');
 var { boolval } = require('./typecasting.php');
 
-module.exports = {
+module['exports'] = {
 	/**
 	 * Create an array
 	 * 
@@ -12,7 +12,7 @@ module.exports = {
 	 * @return {array} Returns an array of the parameters.
 	 */
 	array($var) {
-		return Array.from($var);
+		return Array['from']($var);
 	},
 
 	/**
@@ -27,7 +27,7 @@ module.exports = {
 		if (!is_callable($callback)) type_error('array_map', 1, 'function', $callback);
 		if (!is_array($array)) type_error('array_map', 2, 'array', $array);
 
-		return $array.map($callback);
+		return $array['map']($callback);
 	},
 
 	/**
@@ -41,7 +41,7 @@ module.exports = {
 		if (!is_array($array)) type_error('array_filter', 1, 'array', $array);
 		if (!is_callable($callback)) type_error('array_filter', 2, 'function', $callback);
 
-		return $array.filter($callback);
+		return $array['filter']($callback);
 	},
 
 	/**
@@ -55,14 +55,14 @@ module.exports = {
 	array_rand($array, $num = 1) {
 		if (!is_array($array)) type_error('array_rand', 1, 'array', $array);
 		if (!is_numeric($num)) type_error('array_rand', 2, 'integer', $num);
-		if ($num < 1 || $num > this.count($array)) {
+		if ($num < 1 || $num > this['count']($array)) {
 			throw new Error('WARNING `array_rand()`: Second argument has to be between 1 and the number of elements in the array');
 		}
 
 		var $indexes = [];
 		
 		for (var i = 0; i < $num; ++i) {
-			$indexes.push(Math.floor(Math.random() * this.count($array)));
+			$indexes['push'](Math['floor'](Math['random']() * this['count']($array)));
 		}
 
 		return $indexes;
@@ -79,7 +79,7 @@ module.exports = {
 		if (!is_array($array)) type_error('count', 1, 'array', $array);
 		if (!is_bool($recursive)) type_error('count', 2, 'bool', $recursive);
 
-		if ($recursive != true) return $array['length'];
+		if ($recursive !== true) return $array['length'];
 
 		var $count = 0;
 
@@ -103,7 +103,7 @@ module.exports = {
 	 * Alias of count()
 	 */
 	sizeof() {
-		return this.count(...arguments);
+		return this['count'](...arguments);
 	},
 
 	/**
@@ -119,8 +119,8 @@ module.exports = {
 		if (!is_array($haystack)) type_error('in_array', 2, 'array', $haystack);
 		if (!is_bool($strict)) type_error('in_array', 2, 'bool', $strict);
 
-		return boolval($haystack.find(function($toFind) {
-			return ($strict == true) ? $toFind === $needle : $toFind == $needle;
+		return boolval($haystack['find'](function($toFind) {
+			return ($strict === true) ? $toFind === $needle : $toFind === $needle;
 		}));
 	},
 
@@ -136,13 +136,13 @@ module.exports = {
 		if (!is_null($pieces) && !is_string($glue)) type_error('implode', 1, 'string', $glue);
 		if (!is_null($pieces) && !is_array($pieces)) type_error('implode', 2, 'array', $pieces);
 
-		return (!is_null($pieces)) ? $pieces.join($glue) : $glue.join('');
+		return (!is_null($pieces)) ? $pieces['join']($glue) : $glue['join']('');
 	},
 
 	/**
 	 * Alias of implode()
 	 */
 	join() {
-		return this.implode(...arguments);
+		return this['implode'](...arguments);
 	},
 };

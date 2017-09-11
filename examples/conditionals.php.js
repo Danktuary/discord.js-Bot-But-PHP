@@ -8,7 +8,7 @@ class EmptyClass {
 
 class OtherClass {
 	constructor() {
-		this.prop = true;
+		this['prop'] = true;
 	}
 
 	example() {

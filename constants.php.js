@@ -1,6 +1,6 @@
 // <?php
 
-var $node_versions = process['versions']['node'].split('.');
+var $node_versions = process['versions']['node']['split']('.');
 
 module.exports = {
 	__DIR__: __dirname,
