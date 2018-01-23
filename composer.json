@@ -1,0 +1,15 @@
+{
+    "name": "danktuary/discord.js-but-php",
+    "description": "The most repulsive repo you never wanted to see!",
+    "type": "project",
+    "require": {
+        "charlottedunois/yasmin": "^0.2.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sanctuary",
+            "email": "sanc.pw@gmail.com"
+        }
+    ]
+}

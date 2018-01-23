@@ -1,5 +1,0 @@
-// <?php
-
-module.exports = {
-	token: '',
-};
